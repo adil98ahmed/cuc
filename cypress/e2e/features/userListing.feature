@@ -18,6 +18,7 @@ Feature: User listing and search
     Examples:
       | role  |
       | Admin |
+      
       | ESS   |
 
   Scenario: verify that the user can search by valid employee name
