@@ -8,8 +8,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Install modules
+        uses: npi ci
       - name: Cypress run
-      - uses: cypress-io/github-action@v6
+        uses: cypress-io/github-action@v6
         with: 
           browser: chrome
           headless: true
