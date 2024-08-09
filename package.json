@@ -11,7 +11,11 @@
   
     },
     "scripts":{
-      "build": "webpack --config=Scripts/config/webpack.prod.js",
+      "dev":"vite",
+      "build": "vite build",
+      "preview":"vite preview",
+      "cypress open":"cypress open",
+      "cypress run":"cypress run",
       "webp":"npm install --save-dev webpack",
       "webpp":"npm install --save-dev webpack-dev-server"
     }
