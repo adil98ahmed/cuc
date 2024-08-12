@@ -1,0 +1,52 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "User listing and search",
+    "line": 1,
+    "id": "user-listing-and-search",
+    "tags": [],
+    "uri": "userListing.feature",
+    "elements": [
+      {
+        "id": "user-listing-and-search;verify-that-the-user-can-search-with-status",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "verify that the user can search with status",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "I login to website with \"Admin\" and \"admin123\"",
+            "result": {
+              "status": "passed",
+              "duration": 22589000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I search for user with status \"Enabled\"",
+            "result": {
+              "status": "passed",
+              "duration": 6910000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "I verify that \"Enabled\" is displayed in table",
+            "result": {
+              "status": "passed",
+              "duration": 777000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

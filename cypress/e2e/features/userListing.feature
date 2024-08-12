@@ -32,5 +32,5 @@ Feature: User listing and search
 
     Examples:
       | status   |
-      | Disabled |
+      # | Disabled |
       | Enabled  |

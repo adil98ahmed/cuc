@@ -10,7 +10,8 @@
     "cucumberJson": {
       "generate": true,
       "outputFolder": "cucumber-json",
-      "filePrefix": ""
+      "filePrefix": "cu",
+      "fileSuffix": "cu"
     }
   },
   "scripts": {
