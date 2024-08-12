@@ -1,23 +1,26 @@
 {
   "devDependencies": {
     "cypress": "^13.13.2",
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "multiple-cucumber-html-reporter": "^3.7.0"
   },
   "cypress-cucumber-preprocessor": {
-
     "nonGlobalStepDefinitions": false,
-  
-    "step_definitions": "cypress/e2e/step_definitions/**/"
-  
-    },
-    "scripts":{
-      "dev":"vite",
-      "build": "vite build",
-      "preview":"vite preview",
-      "cypress open":"cypress open",
-      "cypress run":"cypress run",
-      "webp":"npm install --save-dev webpack",
-      "webpp":"npm install --save-dev webpack-dev-server"
+    "step_definitions": "cypress/e2e/step_definitions/**/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
     }
-  
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "cypress open": "cypress open",
+    "cypress run": "cypress run",
+    "webp": "npm install --save-dev webpack",
+    "webpp": "npm install --save-dev webpack-dev-server"
+  }
 }

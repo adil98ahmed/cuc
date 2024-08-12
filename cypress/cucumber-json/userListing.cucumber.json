@@ -1,0 +1,93 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "User listing and search",
+    "line": 1,
+    "id": "user-listing-and-search",
+    "tags": [],
+    "uri": "userListing.feature",
+    "elements": [
+      {
+        "id": "user-listing-and-search;verify-that-the-user-can-search-with-status",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "verify that the user can search with status",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "I login to website with \"Admin\" and \"admin123\"",
+            "result": {
+              "status": "passed",
+              "duration": 9571000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I search for user with status \"Disabled\"",
+            "result": {
+              "status": "passed",
+              "duration": 5752000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "I verify that \"Disabled\" is displayed in table",
+            "result": {
+              "status": "failed",
+              "duration": 5050000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.oxd-table-card`, but never found it.\n    at UserListingPage.eval [as SATATUS_CELL] (cypress/e2e/pages/usersListingPage.js:12:28)\n    at UserListingPage.searchForUserWithStatus (cypress/e2e/pages/usersListingPage.js:84:17)\n    at Context.eval (cypress/e2e/step_definitions/usersListing_steps.js:71:20)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-listing-and-search;verify-that-the-user-can-search-with-status",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "verify that the user can search with status",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "I login to website with \"Admin\" and \"admin123\"",
+            "result": {
+              "status": "passed",
+              "duration": 4166000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I search for user with status \"Enabled\"",
+            "result": {
+              "status": "passed",
+              "duration": 5540000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "I verify that \"Enabled\" is displayed in table",
+            "result": {
+              "status": "passed",
+              "duration": 534000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
