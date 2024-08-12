@@ -11,6 +11,9 @@ class UserListingPage {
     EMPLOYEE_NAME_CELL = () => cy.get('.oxd-table-card')
     SATATUS_CELL = () => cy.get('.oxd-table-card')
     EMPLOYEE_NAME_TEXT_FIELD = () => cy.get('[placeholder="Type for hints..."]')
+    CONFIRM_DELETE_BUTTON = () => cy.get('.oxd-button--label-danger').contains('Delete')
+    DELETE_BUTTON = () => cy.get('.bi-trash').parent()
+    
     employeeName;
     constructor() { }
 
@@ -93,6 +96,12 @@ class UserListingPage {
         } catch (error) {
             cy.log("Element isn't existed")
         }
+    }
+    clickOnDeleteIcon(){
+            this.DELETE_BUTTON().click()
+    }
+    clickOnConfirmDeleteButton(){
+        this.CONFIRM_DELETE_BUTTON().click()
     }
 
 }

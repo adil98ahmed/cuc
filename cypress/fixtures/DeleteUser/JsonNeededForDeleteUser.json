@@ -1,0 +1,9 @@
+{
+    "addUser":{
+        "empNumber":69,
+        "password":"admin123",
+        "status":true,
+        "userRoleId":1,
+        "username":"abcdefghi"
+    }
+}

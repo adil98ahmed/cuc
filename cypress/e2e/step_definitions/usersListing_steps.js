@@ -4,32 +4,21 @@ import'../step_definitions/login_steps'
 import '../../support/commands'
 import UserListingPage from '../pages/usersListingPage'
 
-let username;
-function visitDashBoardAndHandleUsersInterception(){
-    DashboardPage.clickOnAdminTab()
-    cy.intercept(
-        "GET",
-        "/web/index.php/api/v2/admin/users?*"
-    ).as("allUsers")
-    cy.wait("@allUsers",{requestTimeout:15000})
-}
-
-
 
 Then("I seacrh for username {string}",(usernameSearch)=>{
-    visitDashBoardAndHandleUsersInterception()
+    cy.visitDashBoardAndHandleUsersInterception()
     UserListingPage.searchByUserName(usernameSearch)
     cy.clickOnSubmitButton()
 })
 
 Then("I seacrh for user with role {string}",function(role){
-    visitDashBoardAndHandleUsersInterception()
+    cy.visitDashBoardAndHandleUsersInterception()
     UserListingPage.searchByUserRole(role)
     cy.clickOnSubmitButton()
 })
 
 Then('I search for user with employee name {string}', (empName) => {
-    visitDashBoardAndHandleUsersInterception()
+    cy.visitDashBoardAndHandleUsersInterception()
     cy.intercept(
         "GET",
         "web/index.php/api/v2/pim/employees?*",
@@ -41,7 +30,7 @@ Then('I search for user with employee name {string}', (empName) => {
 })
 
 Then("I search for user with status {string}",(statu)=>{
-    visitDashBoardAndHandleUsersInterception()
+    cy.visitDashBoardAndHandleUsersInterception()
     UserListingPage.searchWithStatus(statu)
     cy.clickOnSubmitButton()
 })

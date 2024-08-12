@@ -1,0 +1,72 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Delete user",
+    "line": 1,
+    "id": "delete-user",
+    "tags": [],
+    "uri": "DeleteUser.feature",
+    "elements": [
+      {
+        "id": "delete-user;verify-that-the-user-can-delete-user",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "verify that the user can delete user",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I create temp user with data from \"JsonNeededForDeleteUser.json\"",
+            "result": {
+              "status": "passed",
+              "duration": 1342000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "I login with invalid cred \"Admin\" and \"admin123\"",
+            "result": {
+              "status": "passed",
+              "duration": 4551000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I seacrh for username with created username",
+            "result": {
+              "status": "passed",
+              "duration": 7086000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I delete created user",
+            "result": {
+              "status": "passed",
+              "duration": 1063000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I verify that the user is deleted",
+            "result": {
+              "status": "passed",
+              "duration": 1047000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

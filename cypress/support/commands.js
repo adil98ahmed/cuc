@@ -23,6 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import DashboardPage from '../e2e/pages/DashboardPage'
 Cypress.Commands.add('clickOnSubmitButton',()=>{
     cy.get('[type = "submit"]').click()
 })
@@ -37,5 +38,16 @@ Cypress.Commands.add("loginSuccessfuly",(username,passwrd)=>{
     cy.get('input[name = "username"]').type(username)
     cy.get('input[name = "password').type(passwrd)
     cy.clickOnSubmitButton()
+})
+Cypress.Commands.add("visitDashBoardAndHandleUsersInterception",()=>{
+    DashboardPage.clickOnAdminTab()
+    cy.handleUsersListingAPI()
+})
+Cypress.Commands.add("handleUsersListingAPI",()=>{
+    cy.intercept(
+        "GET",
+        "/web/index.php/api/v2/admin/users?*"
+    ).as("allUsers")
+    cy.wait("@allUsers",{requestTimeout:15000})
 })
 
