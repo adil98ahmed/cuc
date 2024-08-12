@@ -22,7 +22,7 @@
             "name": "I login to website with \"Admin\" and \"admin123\"",
             "result": {
               "status": "passed",
-              "duration": 9571000000
+              "duration": 37089000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I search for user with status \"Disabled\"",
             "result": {
               "status": "passed",
-              "duration": 5752000000
+              "duration": 13861000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I verify that \"Disabled\" is displayed in table",
             "result": {
               "status": "failed",
-              "duration": 5050000000,
+              "duration": 4426000000,
               "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.oxd-table-card`, but never found it.\n    at UserListingPage.eval [as SATATUS_CELL] (cypress/e2e/pages/usersListingPage.js:12:28)\n    at UserListingPage.searchForUserWithStatus (cypress/e2e/pages/usersListingPage.js:84:17)\n    at Context.eval (cypress/e2e/step_definitions/usersListing_steps.js:71:20)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
@@ -63,7 +63,7 @@
             "name": "I login to website with \"Admin\" and \"admin123\"",
             "result": {
               "status": "passed",
-              "duration": 4166000000
+              "duration": 3147000000
             }
           },
           {
@@ -73,7 +73,7 @@
             "name": "I search for user with status \"Enabled\"",
             "result": {
               "status": "passed",
-              "duration": 5540000000
+              "duration": 3393000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "I verify that \"Enabled\" is displayed in table",
             "result": {
               "status": "passed",
-              "duration": 534000000
+              "duration": 293000000
             }
           }
         ]
