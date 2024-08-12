@@ -22,7 +22,7 @@
             "name": "I create temp user with data from \"JsonNeededForDeleteUser.json\"",
             "result": {
               "status": "passed",
-              "duration": 1342000000
+              "duration": 2428000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I login with invalid cred \"Admin\" and \"admin123\"",
             "result": {
               "status": "passed",
-              "duration": 4551000000
+              "duration": 5048000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I seacrh for username with created username",
             "result": {
               "status": "passed",
-              "duration": 7086000000
+              "duration": 7157000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I delete created user",
             "result": {
               "status": "passed",
-              "duration": 1063000000
+              "duration": 970000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "I verify that the user is deleted",
             "result": {
               "status": "passed",
-              "duration": 1047000000
+              "duration": 908000000
             }
           }
         ]
