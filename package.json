@@ -14,5 +14,11 @@
       "fileSuffix": ".cucumber"
     }
   },
-  "scripts": {}
+  "scripts": {
+    "test":"test",
+    "cypress:open":"cypress open",
+    "cypress:runDefault":"cypress run --spec cypress/e2e/features/*.feature",
+    "cypress:chrome":"cypress run --browser chrome --spec cypress/e2e/features/*.feature",
+    "cypress:edge":"cypress run --browser edge --spec cypress/e2e/features/*.feature"
+  }
 }
