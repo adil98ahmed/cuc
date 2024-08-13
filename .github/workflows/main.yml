@@ -10,6 +10,6 @@ jobs:
       options: --user 1001
     steps:
       - uses: actions/checkout@v4
-      - uses: cypress-io/github-action@v6
-        with:
-          browser: chrome
+      # - uses: cypress-io/github-action@v6
+      #   with:
+      #     browser: chrome
